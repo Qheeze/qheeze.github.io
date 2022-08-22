@@ -16,6 +16,7 @@
 
 body {
   background-color: var(--white);
+  letter-spacing: 0.5px;
 }
 
 * {
@@ -23,6 +24,7 @@ body {
   margin: 0;
   padding: 0;
 }
+/* <!-- ==========Section 1 Home========== --> */
 
 /* <!-- --------------navbar-------------- --> */
 
@@ -89,6 +91,14 @@ header {
   background: var(--brown);
 }
 
+.list a {
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.list a:hover {
+  color: var(--blight);
+}
+
 .nav-links ul li:nth-child(1).active ~ .indicator {
   transform: translateX(calc(85.63px * 0));
   width: 81.63px;
@@ -151,4 +161,92 @@ header {
   width: 100%;
   color: transparent;
   background-size: cover;
+}
+/* <!-- ==========Section 2 About Us========== --> */
+.coffe {
+  margin: 270px auto;
+  height: 400px;
+  width: 1000px;
+  max-width: 1000px;
+  display: flex;
+}
+.sometext {
+  margin: 40px;
+  padding-top: 28px;
+  display: flex;
+  flex-direction: column;
+  color: var(--brown);
+  height: 100px;
+  width: 500px;
+  text-align: center;
+  font-weight: 200;
+  font-size: 30px;
+}
+.sometext h3 {
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 100;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.vl {
+  position: relative;
+  height: 600px;
+  border-left: 5px solid var(--brown);
+  top: -100px;
+}
+.vlv {
+  position: relative;
+  height: 5px;
+  width: 500px;
+  border-top: 5px solid var(--blight);
+  bottom: -160px;
+}
+
+/* <!-- ==========Section 3 Menu========== --> */
+.upmenu {
+  padding: 60px 40px 70px 40px;
+  text-align: center;
+  color: var(--brown);
+}
+.upmenu h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: var(--blight);
+}
+.first {
+  font-size: 72px;
+  font-weight: 200;
+}
+/* ---------------Menu---------------- */
+.bigtag {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.minibr {
+  padding: 0 20px;
+  width: 400px;
+}
+.maintag {
+  font-size: 40px;
+  color: var(--brown);
+  padding-bottom: 10px;
+  margin: 0;
+}
+.subtag {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin: 10px 0;
+  color: var(--brown);
+}
+.items h3 {
+  color: var(--blight);
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
 }
