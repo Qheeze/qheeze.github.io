@@ -6,34 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lezzetli</title>
     <link rel="shortcut icon" type="image/png" href="resource/favicon2.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- ============scrollbar========== -->
+    <div class="pbar"></div>
+    <div class="sbar"></div>
     <!-- ==========Section 1 Home========== -->
     <!-- --------------navbar-------------- -->
-    <section class="home">
-      <div class="headerDiv">
-        <header>
-          <img src="/resource/IconOnly.png" alt="logo" class="logo" />
-          <nav>
-            <div class="nav-links">
-              <ul>
-                <li class="list active">
-                  <a href="#">Home</a>
-                </li>
-                <li class="list"><a href="#">About</a></li>
-                <li class="list">
-                  <a href="#">Our Services</a>
-                </li>
-                <li class="list"><a href="#">Gallery</a></li>
-                <div class="indicator"></div>
-              </ul>
-            </div>
-          </nav>
-          <a href="#" class="cta"><button>Contact Us</button></a>
-        </header>
-        <div class="line"></div>
-      </div>
+    <header>
+      <img src="/resource/IconOnly.png" alt="logo" class="logo" />
+      <nav>
+        <div class="nav-links">
+          <ul>
+            <li class="list active">
+              <a href="#home">Home</a>
+            </li>
+            <li class="list"><a href="#aboutus">About</a></li>
+            <li class="list">
+              <a href="#menu">Menu</a>
+            </li>
+            <li class="list"><a href="#gallery">Gallery</a></li>
+            <div class="indicator"></div>
+          </ul>
+        </div>
+      </nav>
+      <a href="#formie" class="cta"><button>Contact Us</button></a>
+    </header>
+    <section class="home" id="home">
+      <div class="headerDiv"></div>
       <!-- --------------main page content-------------- -->
       <div class="mainlogo">
         <img class="logo1" src="/resource/IconOnlynowhitespace.png" alt="" />
@@ -46,14 +51,19 @@
           Lift up your spirits and put you in the best of your mood with the
           best coffee blends from around the world.
         </h3>
-        <a href="#" class="cta"><button>Find Us</button></a>
+        <a
+          href="https://goo.gl/maps/8hzp2vBmJVeMqq9h6"
+          target="_blank"
+          class="cta"
+          ><button>Find Us</button></a
+        >
       </div>
       <div class="someimg">
         <h2>sometextthatsgonnabedeleted</h2>
       </div>
     </section>
     <!-- ==========Section 2 About Us========== -->
-    <section class="aboutus">
+    <section class="aboutus" id="aboutus">
       <div class="coffe">
         <div class="vl"></div>
         <img src="/resource/c4.jpg" alt="" />
@@ -73,163 +83,237 @@
       </div>
     </section>
     <!-- ==========Section 3 Menu========== -->
-    <div class="upmenu">
-      <h3>Our Offering</h3>
-      <h1 class="lezzetli first">Lezzetli's</h1>
-      <h1 class="lezzetli second">Menu</h1>
-    </div>
-    <!-- --------------------Menu-------------------- -->
-    <div class="menu">
-      <div class="bigtag">
-        <div class="minibr">
-          <h3 class="maintag">Drinks</h3>
-          <h3 class="subtag">Iced Coffee</h3>
-          <div class="items">
-            <h3>medium (16oz) ………………………………. 2.95</h3>
-            <h3>large (20oz) ………………………………. 3.50</h3>
+    <section class="menuc" id="menu">
+      <div class="upmenu">
+        <h3>Our Offering</h3>
+        <h1 class="lezzetli first">Lezzetli's</h1>
+        <h1 class="lezzetli second">Menu</h1>
+      </div>
+      <!-- --------------------Menu-------------------- -->
+      <div class="menu">
+        <div class="bigtag">
+          <div class="minibr">
+            <h3 class="maintag">Drinks</h3>
+            <h3 class="subtag">Iced Coffee</h3>
+            <div class="items">
+              <h3>medium (16oz) ………………………………. 2.95</h3>
+              <h3>large (20oz) ………………………………. 3.50</h3>
+            </div>
+            <h3 class="subtag">Cold Brew</h3>
+            <div class="items">
+              <h3>medium (16oz) ………………………………. 5.50</h3>
+              <h3>large (20oz) ………………………………. 3.50</h3>
+            </div>
+            <h3 class="subtag">Organic Espresso Drinks</h3>
+            <div class="items">
+              <h3>espresso ………………………………. 2.95</h3>
+              <h3>americano ………………………………. 2.95</h3>
+              <h3>cappucino ………………………………. 4.50</h3>
+              <h3>cortado ………………………………. 4.50</h3>
+              <h3>macchiato ………………………………. 4.50</h3>
+              <h3>hot chocolate ……………………. 3.95</h3>
+            </div>
           </div>
-          <h3 class="subtag">Cold Brew</h3>
-          <div class="items">
-            <h3>medium (16oz) ………………………………. 5.50</h3>
-            <h3>large (20oz) ………………………………. 3.50</h3>
+          <div class="minibr">
+            <h3 class="subtag">Coffee Drinks</h3>
+            <div class="items">
+              <h3>hammerhead …………………. 3.95 med | 4.50 lg</h3>
+              <h3>café au lait …………………………. 4.25 med | 4.75 lg</h3>
+              <h3>latte ………………………………. 4.50 med | 4.95 lg</h3>
+              <h3>vanilla latte ………………………. 4.95 med | 5.50 lg</h3>
+              <h3>caramel latte …………………. 4.95 med | 5.50 lg</h3>
+              <h3>breve ………………………………. 4.95 med | 5.50 lg</h3>
+              <h3>mocha ………………………………. 4.95 med | 5.50 lg</h3>
+              <h3>vietnamese coffee ……………. 5.00 med | 5.95 lg</h3>
+            </div>
           </div>
-          <h3 class="subtag">Organic Espresso Drinks</h3>
-          <div class="items">
-            <h3>espresso ………………………………. 2.95</h3>
-            <h3>americano ………………………………. 2.95</h3>
-            <h3>cappucino ………………………………. 4.50</h3>
-            <h3>cortado ………………………………. 4.50</h3>
-            <h3>macchiato ………………………………. 4.50</h3>
-            <h3>hot chocolate ……………………. 3.95</h3>
+          <div class="minibr">
+            <h3 class="subtag">Tea ………………. 3.50</h3>
+            <div class="items">
+              <h3>made to order with loose leaf</h3>
+            </div>
+            <h3 class="subtag">Tea Latte ………………. 4.95</h3>
+            <div class="items">
+              <h3>your choice of loose leaf tea with freshly steamed milk</h3>
+            </div>
+            <h3 class="subtag">Chai Latte ………………. 5.95</h3>
+            <div class="items">
+              <h3>
+                loose leaf black chai tea steeped with honey & vanilla and milk
+              </h3>
+            </div>
+            <h3 class="subtag">Italian Soda ………………. 4.50</h3>
+            <div class="items">
+              <h3>
+                voss® sparkling water with shot of flavored syrup over ice
+              </h3>
+            </div>
+            <h3 class="subtag">Orange Juice ………………. 4.50</h3>
+            <div class="items">
+              <h3>Freshly squeezed orange juice</h3>
+            </div>
           </div>
         </div>
-        <div class="minibr">
-          <h3 class="subtag">Coffee Drinks</h3>
-          <div class="items">
-            <h3>hammerhead …………………. 3.95 med | 4.50 lg</h3>
-            <h3>café au lait …………………………. 4.25 med | 4.75 lg</h3>
-            <h3>latte ………………………………. 4.50 med | 4.95 lg</h3>
-            <h3>vanilla latte ………………………. 4.95 med | 5.50 lg</h3>
-            <h3>caramel latte …………………. 4.95 med | 5.50 lg</h3>
-            <h3>breve ………………………………. 4.95 med | 5.50 lg</h3>
-            <h3>mocha ………………………………. 4.95 med | 5.50 lg</h3>
-            <h3>vietnamese coffee ……………. 5.00 med | 5.95 lg</h3>
+        <!-- ---------------Sandwiches--------------- -->
+        <div class="bigtag">
+          <div class="minibr">
+            <h3 class="maintag">Sandwiches</h3>
+            <h3 class="subtag">feta 2 ………………. 8.95</h3>
+            <div class="items">
+              <h3>
+                hummus, feta cheese, sliced red onion, cucumber, tomato, and
+                mixed greens
+              </h3>
+            </div>
+            <h3 class="subtag">feta 3 ………………. 8.95</h3>
+            <div class="items">
+              <h3>
+                veggie sausage, feta, sriracha, house-made olive, tapenade,
+                sliced red onion, tomato, and arugula
+              </h3>
+            </div>
+            <h3 class="subtag">mozz 1 ………………. 8.95</h3>
+            <div class="items">
+              <h3>
+                slices of fresh mozzarella cheese, basil, and tomato, with our
+                tangy balsamic vinaigrette
+              </h3>
+            </div>
           </div>
-        </div>
-        <div class="minibr">
-          <h3 class="subtag">Tea ………………. 3.50</h3>
-          <div class="items">
-            <h3>made to order with loose leaf</h3>
+          <div class="minibr">
+            <h3 class="subtag">mozz 2 ………………. 8.95</h3>
+            <div class="items">
+              <h3>
+                slices of fresh mozzarella cheese, housemade olive tapenade,
+                sliced roasted red pepper, and arugula with our tangy balsamic
+                vinaigrette
+              </h3>
+            </div>
+            <h3 class="subtag">tofu 1 ………………. 9.50</h3>
+            <div class="items">
+              <h3>
+                baked tofu with sliced red onion, tomato, mixed greens, and
+                chile veganaise
+              </h3>
+            </div>
+            <h3 class="subtag">tofu 2 ………………. 9.50</h3>
+            <div class="items">
+              <h3>
+                curried tofu, sliced red onion, tomato, arugula, and veganaise
+              </h3>
+            </div>
           </div>
-          <h3 class="subtag">Tea Latte ………………. 4.95</h3>
-          <div class="items">
-            <h3>your choice of loose leaf tea with freshly steamed milk</h3>
-          </div>
-          <h3 class="subtag">Chai Latte ………………. 5.95</h3>
-          <div class="items">
-            <h3>
-              loose leaf black chai tea steeped with honey & vanilla and milk
-            </h3>
-          </div>
-          <h3 class="subtag">Italian Soda ………………. 4.50</h3>
-          <div class="items">
-            <h3>voss® sparkling water with shot of flavored syrup over ice</h3>
-          </div>
-          <h3 class="subtag">Orange Juice ………………. 4.50</h3>
-          <div class="items">
-            <h3>Freshly squeezed orange juice</h3>
+          <div class="minibr">
+            <h3 class="subtag">turkey ………………. 9.50</h3>
+            <div class="items">
+              <h3>
+                house pesto, oven-roasted turkey breast, jack cheese, sliced red
+                onion, tomato, mixed greens, and mayo
+              </h3>
+            </div>
+            <h3 class="subtag">ham ………………. 9.50</h3>
+            <div class="items">
+              <h3>
+                black forest ham, swiss cheese, sliced red onion, tomato, mixed
+                greens, and dijon
+              </h3>
+            </div>
+            <h3 class="subtag">tuna ………………. 9.50</h3>
+            <div class="items">
+              <h3>
+                white albacore tuna mixed with kalamata olives, basil, red
+                onion, capers, and garlic in a light vinaigrette, topped with
+                sliced red onion, tomato, and mixed greens
+              </h3>
+            </div>
           </div>
         </div>
       </div>
-      <!-- ---------------Sandwiches--------------- -->
-      <div class="bigtag">
-        <div class="minibr">
-          <h3 class="maintag">Sandwiches</h3>
-          <h3 class="subtag">feta 2 ………………. 8.95</h3>
-          <div class="items">
-            <h3>
-              hummus, feta cheese, sliced red onion, cucumber, tomato, and mixed
-              greens
-            </h3>
-          </div>
-          <h3 class="subtag">feta 3 ………………. 8.95</h3>
-          <div class="items">
-            <h3>
-              veggie sausage, feta, sriracha, house-made olive, tapenade, sliced
-              red onion, tomato, and arugula
-            </h3>
-          </div>
-          <h3 class="subtag">mozz 1 ………………. 8.95</h3>
-          <div class="items">
-            <h3>
-              slices of fresh mozzarella cheese, basil, and tomato, with our
-              tangy balsamic vinaigrette
-            </h3>
-          </div>
-        </div>
-        <div class="minibr">
-          <h3 class="subtag">mozz 2 ………………. 8.95</h3>
-          <div class="items">
-            <h3>
-              slices of fresh mozzarella cheese, housemade olive tapenade,
-              sliced roasted red pepper, and arugula with our tangy balsamic
-              vinaigrette
-            </h3>
-          </div>
-          <h3 class="subtag">tofu 1 ………………. 9.50</h3>
-          <div class="items">
-            <h3>
-              baked tofu with sliced red onion, tomato, mixed greens, and chile
-              veganaise
-            </h3>
-          </div>
-          <h3 class="subtag">tofu 2 ………………. 9.50</h3>
-          <div class="items">
-            <h3>
-              curried tofu, sliced red onion, tomato, arugula, and veganaise
-            </h3>
-          </div>
-        </div>
-        <div class="minibr">
-          <h3 class="subtag">turkey ………………. 9.50</h3>
-          <div class="items">
-            <h3>
-              house pesto, oven-roasted turkey breast, jack cheese, sliced red
-              onion, tomato, mixed greens, and mayo
-            </h3>
-          </div>
-          <h3 class="subtag">ham ………………. 9.50</h3>
-          <div class="items">
-            <h3>
-              black forest ham, swiss cheese, sliced red onion, tomato, mixed
-              greens, and dijon
-            </h3>
-          </div>
-          <h3 class="subtag">tuna ………………. 9.50</h3>
-          <div class="items">
-            <h3>
-              white albacore tuna mixed with kalamata olives, basil, red onion,
-              capers, and garlic in a light vinaigrette, topped with sliced red
-              onion, tomato, and mixed greens
-            </h3>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
     <!-- =====================Section 4 Gallery===================== -->
-    <div class="wrap">
-      <input type="checkbox" id="btnBox" />
-      <ul>
-        <li style="background-image: url(/resource/gc.jpg)"></li>
-        <li style="background-image: url(/resource/gc1.jpg)"></li>
-        <li style="background-image: url(/resource/gc2.jpg)"></li>
-        <li style="background-image: url(/resource/gc3.jpg)"></li>
-        <li style="background-image: url(/resource/gc4.jpg)"></li>
-        <li style="background-image: url(/resource/gc5.jpg)"></li>
-        <li style="background-image: url(/resource/gc6.jpg)"></li>
-        <li style="background-image: url(/resource/gc7.jpg)"></li>
-        <li style="background-image: url(/resource/gc8.jpg)"></li>
-      </ul>
+    <section class="gallerys" id="gallery">
+      <div class="upmenu gallery">
+        <h3>Our Place</h3>
+        <h1>Gallery</h1>
+      </div>
+      <div class="wrapper">
+        <input type="checkbox" id="btnBox" />
+        <ul>
+          <li style="background-image: url(/resource/gc.jpg)"></li>
+          <li style="background-image: url(/resource/gc1.jpg)"></li>
+          <li style="background-image: url(/resource/gc2.jpg)"></li>
+          <li style="background-image: url(/resource/gc3.jpg)"></li>
+          <li style="background-image: url(/resource/gc4.jpg)"></li>
+          <li style="background-image: url(/resource/gc5.jpg)"></li>
+          <li style="background-image: url(/resource/gc6.jpg)"></li>
+          <li style="background-image: url(/resource/gc7.jpg)"></li>
+          <li style="background-image: url(/resource/gc8.jpg)"></li>
+        </ul>
+
+        <label for="btnBox" class="btn-area">
+          <span class="btn1">Load More</span>
+          <span class="btn2">Load Less</span>
+        </label>
+      </div>
+    </section>
+    <!-- ==================Form================== -->
+    <section class="formie" id="formie">
+      <div class="talk">
+        <h1 class="upmenu gallery fbig">
+          Let's <br />&nbsp; &nbsp; have <br />&nbsp; &nbsp; &nbsp; &nbsp; a<br />&nbsp;
+          &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;Talk
+        </h1>
+      </div>
+      <div class="form gallery">
+        <h1>Contact Form</h1>
+        <form
+          action="https://formsubmit.co/e19d6cbb493497bb8c46de83c737764f"
+          method="POST"
+          target="_blank"
+        >
+          <input type="text" name="Name" placeholder="Name" required />
+          <input type="text" name="Email" placeholder="Email" required />
+          <select name="Type Of Message">
+            <option>Question</option>
+            <option>Complaint</option>
+            <option>Work</option>
+          </select>
+          <textarea name="Message" placeholder="Message"></textarea>
+          <div class="bdiv">
+            <button class="formb">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <h1 class="bgtext">Let's have a Talk</h1>
+    <!-- ==================Section 6 footer================= -->
+    <div class="footer">
+      <div class="faq">
+        <h3>FAQ</h3>
+        <h3>Store Policy</h3>
+        <h3>Payments</h3>
+      </div>
+      <div class="tel">
+        <h3>Tel: 22 123 123 12</h3>
+        <h3>Email: lezzetlicustomer@gmail.com</h3>
+        <div class="icons">
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <div class="newsletter faq">
+        <h3>Subscribe to our Newsletter</h3>
+        <div class="inputt">
+          <input type="email" class="form-ctrl" placeholder="Email" />
+          <span class="n-btn">
+            <button class="n-btnn">Subscribe</button>
+          </span>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
