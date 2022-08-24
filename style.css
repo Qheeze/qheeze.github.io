@@ -442,3 +442,42 @@ select:focus {
   color: var(--blight);
   background: var(--white);
 }
+/* =========scrollbar========= */
+::-webkit-scrollbar {
+  width: 0;
+}
+#scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  /* background: var(--wdark); */
+  /* background: rgba(255, 255, 255, 0.05); */
+}
+#progressBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  /* height: 100%; */
+  background: var(--brown);
+  /* animation: animate 5s linear infinite; */
+  border-radius: 10px;
+}
+#progressBar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#progressBar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
