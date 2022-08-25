@@ -5,8 +5,8 @@
 :root {
   --brown: #734f33;
   --blight: #734f33;
-  --white: #ebd5c3;
-  --wdark: #e4c6ad;
+  --white: #f1decd;
+  --wdark: #f0d5c0;
 }
 
 ::selection {
@@ -130,8 +130,8 @@ header {
 
 .logo1 {
   display: block;
-  margin: 40px auto 0 auto;
-  height: 220px;
+  margin: 0 auto 0 auto;
+  height: 300px;
 }
 .mainlogo h1 {
   color: var(--brown);
@@ -480,4 +480,90 @@ select:focus {
   left: 0;
   width: 100%;
   height: 100%;
+}
+@media (max-width: 700px) {
+  #scrollPath {
+    display: none;
+  }
+  #progressBar {
+    display: none;
+  }
+  * {
+    overflow-x: hidden;
+  }
+  .mainlogo h3 {
+    letter-spacing: 4px;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  button {
+    font-size: 1.3rem;
+    padding: 7px 20px;
+  }
+  .mainlogo h1 {
+    font-size: 62px;
+  }
+  .logo1 {
+    padding-top: 20px;
+    width: 100px;
+    height: 120px;
+  }
+  .submain {
+    margin: 20px;
+  }
+  .submain button {
+    padding: 10px 30px;
+  }
+  .submain h3 {
+    width: 80%;
+    margin: auto;
+  }
+  .nmobile {
+    display: none;
+  }
+
+  .wrapper .btn-area {
+    padding: 7px 20px;
+  }
+  .coffe {
+    overflow-x: visible;
+    flex-direction: column-reverse;
+    height: 500px;
+    margin: 0;
+  }
+  .sometext h1 {
+    width: 67%;
+    margin: 0 auto;
+    font-size: 3rem;
+  }
+  .sometext h3 {
+    padding: 0;
+    width: 50%;
+    margin: 30px auto;
+    height: 250px;
+    border-bottom: 2px solid var(--brown);
+    border-top: 2px solid var(--brown);
+
+    box-shadow: inset 0 -15px 15px -20px var(--brown);
+  }
+  .sometext {
+    overflow-x: visible;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    height: 500px;
+  }
+  .maintag h3 {
+    font-size: 30px;
+  }
+  .aboutus {
+    height: 500px;
+  }
+  .vl {
+    display: none;
+  }
 }

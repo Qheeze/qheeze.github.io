@@ -11,3 +11,11 @@ window.onscroll = function () {
   let progressHeight = (window.pageYOffset / totalHeight) * 100;
   progress.style.height = progressHeight + "%";
 };
+
+const naviLinks = document.getElementById("naviLinks");
+function sMenu() {
+  naviLinks.style.right = "0";
+}
+function hMenu() {
+  naviLinks.style.right = "-200px";
+}
