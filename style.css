@@ -274,8 +274,6 @@ header {
 }
 .gallery {
   font-size: 1.5em;
-  /* padding-bottom: 10px; */
-  /* padding-top: 190px; */
 }
 .wrapper {
   width: 900px;
@@ -505,7 +503,7 @@ select:focus {
     padding: 7px 20px;
   }
   .mainlogo h1 {
-    font-size: 62px;
+    font-size: 57px;
   }
   .logo1 {
     padding-top: 20px;
@@ -529,41 +527,64 @@ select:focus {
   .wrapper .btn-area {
     padding: 7px 20px;
   }
-  .coffe {
-    overflow-x: visible;
-    flex-direction: column-reverse;
-    height: 500px;
-    margin: 0;
-  }
-  .sometext h1 {
-    width: 67%;
-    margin: 0 auto;
-    font-size: 3rem;
-  }
-  .sometext h3 {
-    padding: 0;
-    width: 50%;
-    margin: 30px auto;
-    height: 250px;
-    border-bottom: 2px solid var(--brown);
-    border-top: 2px solid var(--brown);
-
-    box-shadow: inset 0 -15px 15px -20px var(--brown);
-  }
-  .sometext {
-    overflow-x: visible;
-    width: 40%;
-    margin: 0;
-    padding: 0;
-    height: 500px;
-  }
   .maintag h3 {
-    font-size: 30px;
+    font-size: 25px;
+  }
+  .someimg h2 {
+    color: transparent;
+    height: 200px;
   }
   .aboutus {
+    margin: 70px auto;
+    padding: 0;
+  }
+  .coffe {
+    margin: 0;
     height: 500px;
+    width: auto;
+  }
+  .sometext {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
   }
   .vl {
+    display: none;
+  }
+  .snmobile {
+    display: none;
+  }
+  .vlv {
+    top: 30px;
+    border: 1px solid var(--brown);
+    height: 1px;
+    width: 70%;
+  }
+  .menuc {
+    padding: 0;
+  }
+  .bigtag {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper {
+    width: 90%;
+    /* justify-content: center; */
+    margin: auto;
+  }
+  .wrapper ul {
+    padding-left: 0;
+  }
+  .wrapper ul li {
+    width: 300px;
+    height: 500px;
+  }
+  /* ==========FOrm=========== */
+  .fbig {
     display: none;
   }
 }
