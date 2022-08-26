@@ -75,6 +75,9 @@ header {
   border-bottom: 1px solid var(--brown);
 }
 /* -------------navbar---------- */
+.nav2 {
+  display: none;
+}
 .logo {
   height: 50px;
   cursor: pointer;
@@ -85,6 +88,9 @@ header {
 .nav-links li {
   display: inline-block;
   padding: 0 20px;
+}
+.list a {
+  color: var(--brown);
 }
 
 .indicator {
@@ -157,8 +163,9 @@ header {
   margin-bottom: 10px;
 }
 .submain h3:nth-child(2) {
-  margin-bottom: 10px;
   font-weight: 100;
+  width: 80%;
+  margin: 10px auto;
 }
 .submain button {
   margin: 30px;
@@ -440,6 +447,10 @@ select:focus {
   color: var(--blight);
   background: var(--white);
 }
+a {
+  color: var(--white);
+  padding: 7px;
+}
 /* =========scrollbar========= */
 ::-webkit-scrollbar {
   width: 0;
@@ -489,11 +500,8 @@ select:focus {
   * {
     overflow-x: hidden;
   }
-  .mainlogo h3 {
-    letter-spacing: 4px;
-  }
   h3 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   h1 {
     font-size: 2rem;
@@ -501,6 +509,12 @@ select:focus {
   button {
     font-size: 1.3rem;
     padding: 7px 20px;
+  }
+  .mainlogo h3 {
+    letter-spacing: 4px;
+  }
+  .home {
+    padding-top: 40px;
   }
   .mainlogo h1 {
     font-size: 57px;
@@ -566,25 +580,109 @@ select:focus {
   }
   .menuc {
     padding: 0;
+    width: 100%;
   }
   .bigtag {
     display: flex;
     flex-direction: column;
   }
+  /* ====menu======== */
+  .first {
+    font-size: 52px;
+  }
+  .maintag {
+    font-size: 32px;
+  }
+  /* =========gallerry============ */
+  #gallery {
+    padding: 0;
+  }
+  .upmenu {
+    padding-bottom: 20px;
+  }
   .wrapper {
     width: 90%;
-    /* justify-content: center; */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     margin: auto;
   }
-  .wrapper ul {
+  .wul {
     padding-left: 0;
+    display: inline-block;
+    text-align: left;
+    width: 300px;
   }
   .wrapper ul li {
     width: 300px;
     height: 500px;
+    display: inline;
   }
+  .wrapper #btnBox:checked ~ ul li:nth-child(1n + 3) {
+    max-height: 1000px;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+  }
+  .wrapper ul li:nth-child(1n + 3) {
+    max-height: 0;
+    opacity: 0;
+    transition: 0.2s ease-in;
+  }
+  .btn-area {
+    margin: 0;
+    position: relative;
+    top: -170px;
+  }
+  .wrapper #btnBox:checked ~ .btn-area {
+    display: none;
+  }
+
   /* ==========FOrm=========== */
   .fbig {
+    display: none;
+  }
+  .formie {
+    padding: 0 0 100px 0;
+    margin: auto;
+  }
+  form {
+    justify-content: center;
+    align-items: center;
+  }
+  .formie form .e {
+    width: 60%;
+  }
+  .bgtext {
+    display: none;
+  }
+  /* =============footer============ */
+  .footer {
+    display: block;
+    /* ==========navbar============ */
+  }
+  header nav,
+  img,
+  button {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile-menu a {
+    padding: 25px;
+  }
+  .nav2 {
+    display: flex;
+  }
+  a {
+    color: var(--white);
+    padding: 10px;
+  }
+  .footer div {
+    margin: 20px;
+  }
+  .newsletter {
     display: none;
   }
 }

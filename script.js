@@ -19,3 +19,6 @@ function sMenu() {
 function hMenu() {
   naviLinks.style.right = "-200px";
 }
+function toggleMobileMenu(menu) {
+  menu.classList.toggle("open");
+}

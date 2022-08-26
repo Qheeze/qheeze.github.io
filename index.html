@@ -35,6 +35,18 @@
           </ul>
         </div>
       </nav>
+      <div class="nav2">
+        <ul class="mobile-menu">
+          <li class="list active">
+            <a href="#home">Home</a>
+          </li>
+          <li class="list"><a href="#aboutus">About</a></li>
+          <li class="list">
+            <a href="#menu">Menu</a>
+          </li>
+          <li class="list"><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
       <a href="#formie" class="cta"><button>Contact Us</button></a>
     </header>
     <section class="home" id="home">
@@ -242,8 +254,8 @@
         <h1>Gallery</h1>
       </div>
       <div class="wrapper">
-        <input type="checkbox" id="btnBox" />
-        <ul>
+        <input type="checkbox" id="btnBox" class="check" />
+        <ul class="wul">
           <li style="background-image: url(/resource/gc.jpg)"></li>
           <li style="background-image: url(/resource/gc1.jpg)"></li>
           <li style="background-image: url(/resource/gc2.jpg)"></li>
@@ -276,14 +288,26 @@
           method="POST"
           target="_blank"
         >
-          <input type="text" name="Name" placeholder="Name" required />
-          <input type="text" name="Email" placeholder="Email" required />
-          <select name="Type Of Message">
+          <input
+            type="text"
+            class="e"
+            name="Name"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="text"
+            class="e"
+            name="Email"
+            placeholder="Email"
+            required
+          />
+          <select class="e" name="Type Of Message">
             <option>Question</option>
             <option>Complaint</option>
             <option>Work</option>
           </select>
-          <textarea name="Message" placeholder="Message"></textarea>
+          <textarea class="e" name="Message" placeholder="Message"></textarea>
           <div class="bdiv">
             <button class="formb">Send</button>
           </div>
