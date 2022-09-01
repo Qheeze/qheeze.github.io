@@ -118,19 +118,19 @@ header {
 
 .nav-links ul li:nth-child(1).active ~ .indicator {
   transform: translateX(calc(85.63px * 0));
-  width: 81.63px;
+  width: 101.63px;
 }
 .nav-links ul li:nth-child(2).active ~ .indicator {
-  transform: translateX(calc(85.63px * 1));
-  width: 90.56px;
+  transform: translateX(calc(90.63px * 1));
+  width: 120.56px;
 }
 .nav-links ul li:nth-child(3).active ~ .indicator {
-  transform: translateX(calc(173.24px * 1));
-  width: 90px;
+  transform: translateX(calc(200.24px * 1));
+  width: 110px;
 }
 .nav-links ul li:nth-child(4).active ~ .indicator {
-  transform: translateX(calc(260.8px * 1));
-  width: 100.52px;
+  transform: translateX(calc(300.8px * 1));
+  width: 110.52px;
 }
 /* <!-- --------------main page content-------------- --> */
 
