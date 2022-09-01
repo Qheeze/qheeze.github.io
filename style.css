@@ -174,7 +174,7 @@ header {
 }
 .someimg h2 {
   background-image: linear-gradient(rgba(30, 4, 4, 0.1), rgba(30, 4, 4, 0.5)),
-    url(/resource/shop1.jpg);
+    url(resource/shop1.jpg);
   min-height: 500px;
   width: 100%;
   color: transparent;
